@@ -56,12 +56,18 @@ body{
     margin-right: 4px;
     background-color: var(--Light-Grayish-Blue);
     z-index: 1;
+    transition: all 0.3s ease;
+}
+.card__button::hover{
+    cursor: pointer;
+    background-color: var(--Grayish-Blue);
+    fill:#fff
 }
 /*--------------------Profile-------------------------*/
 .card__profile{
     margin: 0 30px 30px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     opacity: 1;
 }
 .card__profile__picture{
@@ -70,12 +76,12 @@ body{
     border-radius: 50%;
 }
 .card__profile__name{
-    margin: 4px 0 2px -54px;
+    margin: 4px 0 2px 15px;
     color: var(--Very-Dark-Grayish-Blue);
     font-weight: 700;
 }
 .card__profile__date{
-    margin-left: -54px;
+    margin-left: 15px;
     color: var(--Grayish-Blue);
 }
 
@@ -88,8 +94,10 @@ body{
     height: 80px;
     padding: 20px;
     display: flex;
+    gap: 5px;
     align-items: center;
     opacity: 0;
+    transition: all 0.5s ease;
 }
 .card__share-icons__share{
     color: var(--Grayish-Blue);
@@ -113,18 +121,17 @@ body{
 }
 .hidden{
     opacity: 0;
+    transition: all 0.5s ease;
 }
 .show{
     opacity: 1;
-    transform: scale(1.1) rotate(315deg);
+    transition: all 0.5s ease;
 }
-
-
-
-
-
-
-
+.rotate{
+    transition: all 0.3s ease;
+    transform: scale(1.1) rotate(315deg);
+    background-color: var(--Desaturated-Dark-Blue);
+}
 .attribution { 
     font-size: 18px; 
     text-align: center; 

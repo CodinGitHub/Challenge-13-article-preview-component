@@ -6,4 +6,5 @@ shareBtn.addEventListener('click', ()=>{
 	console.log('click')
 	profile.classList.toggle('hidden');
 	shareIcons.classList.toggle('show');
+	shareBtn.classList.toggle('rotate');
 });
